@@ -1,3 +1,5 @@
+from typing import Tuple
+
 import faiss
 import numpy as np
 import configparser
@@ -9,17 +11,17 @@ from sentence_transformers import SentenceTransformer
 class PipelineRAG:
     def __init__(self):
         self.embedder = SentenceTransformer("all-MiniLM-L6-v2")
-        self.uri = "http://localhost:11434/api/generate"
-        self.bing_api_key = self._load_config()
+        self.bing_api_key, self.port = self._load_config()
+        self.uri = f"http://localhost:{self.port}/api/generate"
         self.model_name = "llama3"
         self.index = None
         self.docs = []
 
     @staticmethod
-    def _load_config() -> str:
+    def _load_config() -> tuple[str, str]:
         config = configparser.ConfigParser()
         config.read('config.ini')
-        return config['API']['key']
+        return config['API']['key'], config['OLLAMA']['port']
 
     def _send_prompt(self, prompt: str) -> str:
         response = requests.post(self.uri, json={

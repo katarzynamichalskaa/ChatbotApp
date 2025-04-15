@@ -32,6 +32,15 @@ Once the installation is complete, pull the llama3 model:
 ```bash
 ollama pull llama3
 ```
+
+By default, Ollama runs on port 11434, but if another application is already using this port, you can check which port Ollama is using with the following command:
+
+```bash
+lsof -i -P | grep LISTEN | grep ollama
+```
+
+If necessary, you can change the port by editing the OLLAMA value in config.ini file.
+
 ### 2. Creating a Virtual Environment
 
 Create a virtual environment:
