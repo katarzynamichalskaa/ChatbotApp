@@ -50,6 +50,7 @@ After running the project, a link will be printed in the terminal, such as:
 ```
 
 ### 6. Proof of concept
-[2025-04-15 19-26-52.mkv](..%2F..%2F..%2F..%2FVideos%2F2025-04-15%2019-26-52.mkv)
+
+https://github.com/user-attachments/assets/26644058-9359-4ace-ad2b-caba83e86613
 ![img.png](data/img.png)
 ![img_1.png](data/img_1.png)
