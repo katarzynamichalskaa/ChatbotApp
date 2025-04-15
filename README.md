@@ -52,5 +52,6 @@ After running the project, a link will be printed in the terminal, such as:
 ### 6. Proof of concept
 
 https://github.com/user-attachments/assets/26644058-9359-4ace-ad2b-caba83e86613
+
 ![img.png](data/img.png)
 ![img_1.png](data/img_1.png)
