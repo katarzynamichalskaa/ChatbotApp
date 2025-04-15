@@ -4,7 +4,7 @@
 
 ### 1. Install Ollama
 
-Start by installing Ollama by running the following command in your terminal:
+Start by installing Ollama by running the following command in your terminal (https://ollama.com/download):
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
@@ -20,7 +20,7 @@ ollama pull llama3
 Create a virtual environment:
 
 ```bash
-python -m venv venv
+python3 -m venv venv
 ```
 
 ### 3. Activating the Virtual Environment
@@ -28,7 +28,7 @@ Activate the virtual environment by running:
 
 
 ```bash
-venv\Scripts\activate
+source venv/bin/activate
 ```
 
 ### 4. Installing Dependencies
@@ -52,6 +52,3 @@ After running the project, a link will be printed in the terminal, such as:
 ### 6. Proof of concept
 
 https://github.com/user-attachments/assets/26644058-9359-4ace-ad2b-caba83e86613
-
-![img.png](data/img.png)
-![img_1.png](data/img_1.png)
